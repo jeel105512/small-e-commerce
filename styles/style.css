@@ -1,0 +1,584 @@
+@import url(./reset.css);
+
+*{
+    /* outline: 1px dotted #333; */
+}
+
+:root{
+    --navBg: #141414;
+    --lightBg: #f5f5f5;
+    --black: #000;
+    --white: #fff;
+    --lightText: #bdbdbd;
+    --semiLight: #7d7d7d;
+    --logoColor: #6831ff;
+}
+
+html, body, main, section{
+    height: 100%;
+}
+
+body{
+    padding: 1em 7em;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav and header */
+body > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0.7em 1em;
+    font-size: 13pt;
+    background: var(--navBg);
+    color: var(--white);
+
+    border-radius: 10px 10px 0 0;
+}
+
+.createAccount{
+    display: flex;
+    gap: 1em;
+}
+
+.createAccount a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.createAccount a:first-child{
+    padding-right: 1em;
+    border-right: 1px solid var(--lightText);
+}
+
+body > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--lightText);
+
+    border-left: 1px solid var(--lightBg);
+    border-right: 1px solid var(--lightBg);
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.logo{
+    font-size: 24pt;
+    color: var(--logoColor);
+}
+
+.info > nav{
+    display: flex;
+    gap: 1em;
+}
+
+.info > nav a{ 
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-right: 1em;
+}
+
+.searchaccount{
+    display: flex;
+    gap: 2em;
+    padding-right: 1em;
+    border-right: 1px solid var(--lightText);
+}
+
+.searchaccount a{
+    text-decoration: none;
+    color: var(--lightText);
+    font-size: 16pt;
+}
+
+.cart a{
+    font-size: 16pt;
+    color: var(--lightText);
+}
+
+.main-offers{
+    display: flex;
+    align-items: center;
+
+    border-left: 1px solid var(--lightBg);
+    border-right: 1px solid var(--lightBg);
+}
+
+.main-offers div{
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-offers-2{
+    border-left: 1px solid var(--lightText);
+    border-right: 1px solid var(--lightText);
+}
+
+.main-offers-light{
+    color: var(--lightText);
+    font-size: 10pt;
+}
+
+.main-offers-bold{
+    font-weight: bold;
+}
+
+/* Hero */
+#hero{
+    display: flex;
+}
+
+#hero div{
+    flex: 1;
+}
+
+.hero-left{
+    padding: 0 4em 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    background: var(--lightBg);
+}
+
+.hero-left h1{
+    font-size: 43pt;
+    font-weight: bold;
+}
+
+.hero-p{
+    color: var(--semiLight);
+    line-height: 1.5;
+    font-size: 18pt;
+}
+
+.hero-action{
+    background: var(--logoColor);
+    padding: 1em 2em;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.hero-right{
+    background-image: url(../images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Trending */
+#trending{
+    padding: 7em 2em;
+    border-left: 1px solid var(--lightBg);
+    border-right: 1px solid var(--lightBg);
+}
+
+.trending-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.trending-products h2{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.trending-products a{
+    text-decoration: none;
+    color: var(--logoColor);
+    font-weight: bold;
+}
+
+.trending-products-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+
+.trending-product{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 1em;
+    /* padding: 1em; */
+}
+
+.flex1{
+    flex: 1;
+}
+
+.flex2{
+    flex: 2;
+}
+
+.trending-img-1{
+    width: 100%;
+    background-image: url(../images/pen2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-2{
+    width: 100%;
+    background-image: url(../images/mug1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-3{
+    width: 100%;
+    background-image: url(../images/note3.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-img-4{
+    width: 100%;
+    background-image: url(../images/bag1.webp);
+    background-size: cover;
+    background-position: center;
+}
+.trending-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.trending-light{
+    color: var(--semiLight);
+}
+
+.trending-bold{
+    font-weight: bold;
+}
+
+.colors{
+    display: flex;
+    gap: 0.7em;
+}
+
+.black{
+    color: rgb(40, 40, 40);
+}
+
+.maroon{
+    color: maroon;
+}
+
+.gray{
+    color: lightgray;
+}
+
+.creem{
+    color: rgb(255, 222, 151);
+}
+
+#collections{
+    padding: 8em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: var(--lightBg);
+}
+
+.collections-bold{
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.collection-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.collection{
+    flex: 1;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1em;
+}
+
+.flex-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.flex-5{
+    flex: 5;
+}
+
+.collection-img1{
+    width: 100%;
+    background-image: url(../images/desk3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.collection-img2{
+    width: 100%;
+    background-image: url(../images/selfimprovement1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.collection-img3{
+    width: 100%;
+    background-image: url(../images/travel1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.collection-light{
+    color: var(--semiLight);
+    font-size: 11pt;
+}
+
+.collection-bold{
+    font-weight: bold;
+}
+
+/* Sales */
+#sale{
+    background: linear-gradient(180deg, rgba(255,255,255,0.850455216266194) 0%, rgba(255,255,255,0.9521358885351015) 30%, rgba(255,255,255,1) 100%),
+                url(../images/woman-notebook-organizer-notepad.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 7em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+
+    /* border-left: 1px solid var(--lightBg);
+    border-right: 1px solid var(--lightBg); */
+}
+
+.sale-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.sale-offer h2{
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+.sale-offer p{
+    text-align: center;
+    font-size: 16pt;
+    line-height: 1.5;
+    color: var(--semiLight);
+}
+
+.sale-offer a{
+    padding: 1em 2em;
+    background: var(--navBg);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.comments-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.comments-area h2{
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.comments{
+    display: flex;
+    gap: 2em;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.comment i{
+    font-size: 30pt;
+    color: var(--lightText);
+}
+
+.comment-light{
+    line-height: 1.5;
+    font-size: 13pt;
+    color: var(--semiLight);
+}
+
+.comment-bold{
+    font-weight: bold;
+}
+
+/* Company Info */
+#companyInfo{
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    border-left: 1px solid var(--lightBg);
+    border-right: 1px solid var(--lightBg);
+}
+
+#companyInfo .logo{
+    text-align: center;
+}
+
+.otherInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.otherInfo-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.otherInfo-top div{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.company-bold{
+    font-weight: bold;
+}
+
+.company-light{
+    color: var(--semiLight);
+}
+
+.otherInfo-bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.otherInfo-bottom div{
+    flex: 1;
+}
+
+.otherInfo-bottom-1{
+    padding: 2em 6em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: var(--lightBg);
+    border-radius: 10px;
+}
+
+.otherInfo-bottom-1-bold{
+    font-weight: bold;
+}
+
+.otherInfo-bottom-1-light{
+    font-size: 11pt;
+    color: var(--semiLight);
+}
+
+.email{
+    display: flex;
+    gap: 1em;
+}
+
+.email input{
+    width: 60%;
+    padding: 0.7em;
+    border-radius: 5px;
+    border: 1px solid var(--lightText);
+}
+
+.email a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5em 1em;
+    background: var(--logoColor);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherInfo-bottom-2{
+    color: var(--white);
+    background: linear-gradient(rgba(104, 49, 255, 0.8), rgba(104, 49, 255, 0.8)), url(../images/desk3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0em 3em;
+}
+
+.otherInfo-bottom-2 h2{
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.otherInfo-bottom-2 p{
+    line-height: 1.5;
+}
+
+.otherInfo-bottom-2 p span a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+}
+
+footer p{
+    text-align: center;
+    padding: 1em;
+    color: var(--semiLight);
+}
