@@ -1,0 +1,388 @@
+@import url(./reset.css);
+
+*{
+    /* outline: 1px dotted #333; */
+}
+:root{
+    --navBg: #141414;
+    --lightBg: #f5f5f5;
+    --black: #000;
+    --white: #fff;
+    --lightText: #bdbdbd;
+    --semiLight: #7d7d7d;
+    --logoColor: #6831ff;
+    --gold: #ffd700;
+}
+
+html, body, main, section{
+    height: 100%;
+}
+
+body{
+    padding: 1em 7em;
+    font-family: 'Poppins', sans-serif;
+
+    position: relative;
+}
+
+/* header */
+body > header{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-icon{
+    font-size: 24pt;
+    color: var(--logoColor);
+}
+
+.header-title{
+    font-size: 24pt;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* main */
+.allProducts{
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1em; */
+}
+
+.product{
+    padding: 1em;
+    min-width: 25%; /*change its % according to the display size like 33% at medium and 100% at the smallest*/
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--lightBg);
+}
+
+.productImg{
+    /* flex: 2;
+    height: 245px;
+    width: 1fr; */
+    flex: 3;
+    background: url(../images/bag1.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+/* .productImg > img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    
+    border-radius: 12px;
+} */
+
+.img1{
+    background: url(../images/bag1.webp);
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background: url(../images/bag2.webp);
+    background-position: center;
+    background-size: cover;
+}
+.img3{
+    background: url(../images/note1.jfif);
+    background-position: center;
+    background-size: cover;
+}
+.img4{
+    background: url(../images/note2.jfif);
+    background-position: center;
+    background-size: cover;
+}
+.img5{
+    background: url(../images/note3.jfif);
+    background-position: center;
+    background-size: cover;
+}
+.img6{
+    background: url(../images/note3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img7{
+    background: url(../images/pen1.webp);
+    background-position: center;
+    background-size: cover;
+}
+.img8{
+    background: url(../images/pen2.webp);
+    background-position: center;
+    background-size: cover;
+}
+.img9{
+    background: url(../images/mug1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img10{
+    background: url(../images/mug2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.productInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.productName{
+    font-weight: bold;
+}
+
+.gold{
+    color: var(--gold);
+}
+
+.gray{
+    color: var(--lightText);
+}
+
+.reviews{
+    color: var(--semiLight);
+}
+
+.price{
+    font-weight: bold;
+}
+
+/* footer */
+footer p{
+    padding: 1em;
+    text-align: center;
+    color: var(--semiLight);
+}
+
+/* mold */
+.mold{
+    padding: 2em;
+    width: 80%;
+    height: 90%;
+
+    background: var(--white);
+    border-radius: 10px;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+
+    display: none;
+    animation: modal-opens 0.5s;
+}
+
+@keyframes modal-opens{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.mold-img{
+    flex: 1;
+    border-radius: 10px;
+}
+
+.mold-info{
+    flex: 1;
+
+    padding: 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 1em;
+}
+
+.mold-info-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mold-info-top h2{
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.mold-info-top i{
+    font-size: 16pt;
+    cursor: pointer;
+    color: var(--lightText);
+    transition: all 0.4s ease;
+}
+
+.mold-info-top i:hover{
+    color: #ff0000;
+}
+
+.mold-price{
+    font-size: 16pt;
+}
+
+.mold-ratings{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.mold-rating{
+    display: flex;
+    gap: 0.2em;
+}
+
+.mold-reviews a{
+    text-decoration: none;
+    color: var(--logoColor);
+}
+
+.mold-color{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.color{
+    font-size: 16pt;
+}
+
+.colors{
+    display: flex;
+    gap: 0.5em;
+}
+
+.colors i{
+    font-size: 24pt;
+    padding: 0.1em;
+}
+
+.mold-color-active{
+    border: 2px solid var(--black);
+    border-radius: 50%;
+}
+
+.mold-size{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.size{
+    font-size: 16pt;
+}
+
+.sizes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7em;
+}
+
+.sizes div{
+    padding: 1em 0;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid var(--lightText);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.size-active{
+    border: 1px solid var(--logoColor);
+    background: var(--logoColor);
+    color: var(--white);
+}
+
+.size-unavailable{
+    color: var(--lightText);
+}
+
+.add-to-bag button{
+    padding: 1em 0;
+    width: 100%;
+    background: var(--logoColor);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 13pt;
+    cursor: pointer;
+}
+
+/* .toggle-active{
+    display: none;
+} */
+
+/* responsive */
+@media screen and (max-width: 960px){
+    body{
+        padding: 1em 3em;
+    }
+    
+    .product{
+        min-width: 33.33%;
+    } 
+
+    .mold{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 900px){
+    body{
+        padding: 1em;
+    }
+
+    .mold{
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        padding: 1em 0;
+    }
+    
+    .product{
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .product{
+        min-width: 100%;
+    }  
+
+    .mold-ratings{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+}
+
+a{
+    width: 25%;
+
+    text-decoration: none;
+    color: var(--black);
+}

@@ -1,0 +1,202 @@
+@import url(./reset.css);
+
+*{
+    /* outline: 1px dotted #333; */
+}
+
+:root{
+    --navBg: #141414;
+    --lightBg: #f5f5f5;
+    --black: #000;
+    --white: #fff;
+    --lightText: #bdbdbd;
+    --semiLight: #7d7d7d;
+    --logoColor: #6831ff;
+}
+
+html, body, main, section{
+    height: 100%;
+}
+
+body{
+    padding: 3em 7em;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+body > header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo{
+    font-size: 24pt;
+    color: var(--logoColor);
+}
+
+.title{
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.subTitle{
+    font-size: 14pt;
+    color: var(--semiLight);
+}
+
+.subTitle-color{
+    text-decoration: none;
+    color: var(--logoColor);
+}
+
+body > main{
+    padding: 0 20em;
+}
+
+.contact{
+    padding: 2em;
+    font-size: 14pt;
+    color: var(--semiLight);
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--lightText);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.contact fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    line-height: 1.5;
+}
+
+.email input{
+    width: 100%;
+    padding: 0.3em 0;
+    border: 1px solid var(--lightText);
+    border-radius: 5px;
+}
+
+.password input{
+    width: 100%;
+    padding: 0.3em 0;
+    border: 1px solid var(--lightText);
+    border-radius: 5px;
+}
+
+.contact-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in{
+    cursor: pointer;
+    font-size: 14pt;
+    text-decoration: none;
+    background: var(--logoColor);
+    color: var(--white);
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+
+    padding-top: 2em;
+    border-top: 1px solid var(--lightText);
+}
+
+.contact-bottom a{
+    color: var(--semiLight);
+    font-size: 20pt;
+    
+    transition: all 0.4s ease;
+}
+
+.contact-bottom a:hover{
+    color: var(--logoColor);
+}
+
+/* responsive */
+@media screen and (max-width: 1300px){
+    body > main{
+        padding: 0 15em;
+    }
+    
+    .contact-middle{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }   
+}
+
+@media screen and (max-width: 1200px){
+    .contact-middle{
+        text-align: center;
+    }
+
+    .contact-bottom{
+        font-size: 14pt;
+    }
+
+    body > main{
+        padding: 0 10em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body > main{
+        padding: 0 7em;
+    }
+}
+
+@media screen and (max-width: 960px){
+    body > main{
+        padding: 0 5em;
+    }
+
+    .title{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px){
+    body > main{
+        padding: 0 3em;
+    }
+
+    .contact-bottom{
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        padding: 3em 3em; 
+    }
+    
+    body > main{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 3em 1em; 
+    }
+}
