@@ -1,10 +1,10 @@
 @import url(./reset.css);
 
-*{
+* {
     /* outline: 1px dotted #333; */
 }
 
-:root{
+:root {
     --navBg: #141414;
     --lightBg: #f5f5f5;
     --black: #000;
@@ -14,21 +14,24 @@
     --logoColor: #6831ff;
 }
 
-html, body, main, section{
+html,
+body,
+main,
+section {
     height: 100%;
 }
 
-body{
+body {
     padding: 1em 7em;
     font-family: 'Poppins', sans-serif;
 }
 
 /* nav and header */
-body > nav{
+body>nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 0.7em 1em;
     font-size: 13pt;
     background: var(--navBg);
@@ -37,22 +40,22 @@ body > nav{
     border-radius: 10px 10px 0 0;
 }
 
-.createAccount{
+.createAccount {
     display: flex;
     gap: 1em;
 }
 
-.createAccount a{
+.createAccount a {
     text-decoration: none;
     color: var(--white);
 }
 
-.createAccount a:first-child{
+.createAccount a:first-child {
     padding-right: 1em;
     border-right: 1px solid var(--lightText);
 }
 
-body > header{
+body>header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,54 +65,54 @@ body > header{
     border-right: 1px solid var(--lightBg);
 }
 
-.header-left{
+.header-left {
     display: flex;
     align-items: center;
     gap: 1em;
     padding: 1em;
 }
 
-.logo{
+.logo {
     font-size: 24pt;
     color: var(--logoColor);
 }
 
-.info > nav{
+.info>nav {
     display: flex;
     gap: 1em;
 }
 
-.info > nav a{ 
+.info>nav a {
     text-decoration: none;
     color: var(--black);
 }
 
-.header-right{
+.header-right {
     display: flex;
     align-items: center;
     gap: 2em;
     padding-right: 1em;
 }
 
-.searchaccount{
+.searchaccount {
     display: flex;
     gap: 2em;
     padding-right: 1em;
     border-right: 1px solid var(--lightText);
 }
 
-.searchaccount a{
+.searchaccount a {
     text-decoration: none;
     color: var(--lightText);
     font-size: 16pt;
 }
 
-.cart a{
+.cart a {
     font-size: 16pt;
     color: var(--lightText);
 }
 
-.main-offers{
+.main-offers {
     display: flex;
     align-items: center;
 
@@ -117,7 +120,7 @@ body > header{
     border-right: 1px solid var(--lightBg);
 }
 
-.main-offers div{
+.main-offers div {
     flex: 1;
     padding: 2em;
     display: flex;
@@ -126,30 +129,30 @@ body > header{
     align-items: center;
 }
 
-.main-offers-2{
+.main-offers-2 {
     border-left: 1px solid var(--lightText);
     border-right: 1px solid var(--lightText);
 }
 
-.main-offers-light{
+.main-offers-light {
     color: var(--lightText);
     font-size: 10pt;
 }
 
-.main-offers-bold{
+.main-offers-bold {
     font-weight: bold;
 }
 
 /* Hero */
-#hero{
+#hero {
     display: flex;
 }
 
-#hero div{
+#hero div {
     flex: 1;
 }
 
-.hero-left{
+.hero-left {
     padding: 0 4em 0 2em;
     display: flex;
     flex-direction: column;
@@ -159,18 +162,18 @@ body > header{
     background: var(--lightBg);
 }
 
-.hero-left h1{
+.hero-left h1 {
     font-size: 43pt;
     font-weight: bold;
 }
 
-.hero-p{
+.hero-p {
     color: var(--semiLight);
     line-height: 1.5;
     font-size: 18pt;
 }
 
-.hero-action{
+.hero-action {
     background: var(--logoColor);
     padding: 1em 2em;
     text-decoration: none;
@@ -178,45 +181,53 @@ body > header{
     border-radius: 5px;
 }
 
-.hero-right{
+.hero-right {
     background-image: url(../images/hero-image.jpg);
     background-size: cover;
     background-position: center;
 }
 
 /* Trending */
-#trending{
+#trending {
     padding: 7em 2em;
     border-left: 1px solid var(--lightBg);
     border-right: 1px solid var(--lightBg);
 }
 
-.trending-products{
+.trending-products {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2em 0;
 }
 
-.trending-products h2{
+.trending-products h2 {
     font-size: 18pt;
     font-weight: bold;
 }
 
-.trending-products a{
+.trending-products a {
     text-decoration: none;
     color: var(--logoColor);
     font-weight: bold;
 }
 
-.trending-products-card{
-    display: flex;
+.trending-products-card {
+    /* display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2em;
+    gap: 2em; */
+
+    /*  */
+    /*  */
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 1em;
 }
 
-.trending-product{
+.trending-product {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -227,78 +238,79 @@ body > header{
     /* padding: 1em; */
 }
 
-.flex1{
+.flex1 {
     flex: 1;
 }
 
-.flex2{
+.flex2 {
     flex: 2;
 }
 
-.trending-img-1{
+.trending-img-1 {
     width: 100%;
     background-image: url(../images/pen2.webp);
     background-size: cover;
     background-position: center;
 }
 
-.trending-img-2{
+.trending-img-2 {
     width: 100%;
     background-image: url(../images/mug1.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.trending-img-3{
+.trending-img-3 {
     width: 100%;
     background-image: url(../images/note3.jfif);
     background-size: cover;
     background-position: center;
 }
 
-.trending-img-4{
+.trending-img-4 {
     width: 100%;
     background-image: url(../images/bag1.webp);
     background-size: cover;
     background-position: center;
 }
-.trending-info{
+
+.trending-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
 
-.trending-light{
+.trending-light {
     color: var(--semiLight);
 }
 
-.trending-bold{
+.trending-bold {
     font-weight: bold;
 }
 
-.colors{
+.colors {
     display: flex;
     gap: 0.7em;
 }
 
-.black{
+.black {
     color: rgb(40, 40, 40);
 }
 
-.maroon{
+.maroon {
     color: maroon;
 }
 
-.gray{
+.gray {
     color: lightgray;
 }
 
-.creem{
+.creem {
     color: rgb(255, 222, 151);
 }
 
-#collections{
+#collections {
     padding: 8em 2em;
     display: flex;
     flex-direction: column;
@@ -306,19 +318,19 @@ body > header{
     background: var(--lightBg);
 }
 
-.collections-bold{
+.collections-bold {
     font-weight: bold;
     font-size: 18pt;
 }
 
-.collection-items{
+.collection-items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 1.5em;
 }
 
-.collection{
+.collection {
     flex: 1;
     height: 450px;
 
@@ -329,18 +341,18 @@ body > header{
     gap: 1em;
 }
 
-.flex-1{
+.flex-1 {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.flex-5{
+.flex-5 {
     flex: 5;
 }
 
-.collection-img1{
+.collection-img1 {
     width: 100%;
     background-image: url(../images/desk3.jpg);
     background-size: cover;
@@ -348,7 +360,7 @@ body > header{
     border-radius: 10px;
 }
 
-.collection-img2{
+.collection-img2 {
     width: 100%;
     background-image: url(../images/selfimprovement1.jpg);
     background-size: cover;
@@ -356,7 +368,7 @@ body > header{
     border-radius: 10px;
 }
 
-.collection-img3{
+.collection-img3 {
     width: 100%;
     background-image: url(../images/travel1.jpg);
     background-size: cover;
@@ -364,19 +376,19 @@ body > header{
     border-radius: 10px;
 }
 
-.collection-light{
+.collection-light {
     color: var(--semiLight);
     font-size: 11pt;
 }
 
-.collection-bold{
+.collection-bold {
     font-weight: bold;
 }
 
 /* Sales */
-#sale{
-    background: linear-gradient(180deg, rgba(255,255,255,0.850455216266194) 0%, rgba(255,255,255,0.9521358885351015) 30%, rgba(255,255,255,1) 100%),
-                url(../images/woman-notebook-organizer-notepad.jpg);
+#sale {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.850455216266194) 0%, rgba(255, 255, 255, 0.9521358885351015) 30%, rgba(255, 255, 255, 1) 100%),
+        url(../images/woman-notebook-organizer-notepad.jpg);
     background-size: cover;
     background-position: center;
 
@@ -391,7 +403,7 @@ body > header{
     border-right: 1px solid var(--lightBg); */
 }
 
-.sale-offer{
+.sale-offer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,19 +411,19 @@ body > header{
     width: 100%;
 }
 
-.sale-offer h2{
+.sale-offer h2 {
     font-size: 40pt;
     font-weight: bold;
 }
 
-.sale-offer p{
+.sale-offer p {
     text-align: center;
     font-size: 16pt;
     line-height: 1.5;
     color: var(--semiLight);
 }
 
-.sale-offer a{
+.sale-offer a {
     padding: 1em 2em;
     background: var(--navBg);
     text-decoration: none;
@@ -419,46 +431,46 @@ body > header{
     border-radius: 5px;
 }
 
-.comments-area{
+.comments-area {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.comments-area h2{
+.comments-area h2 {
     font-weight: bold;
     font-size: 16pt;
 }
 
-.comments{
+.comments {
     display: flex;
     gap: 2em;
 }
 
-.comment{
+.comment {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-.comment i{
+.comment i {
     font-size: 30pt;
     color: var(--lightText);
 }
 
-.comment-light{
+.comment-light {
     line-height: 1.5;
     font-size: 13pt;
     color: var(--semiLight);
 }
 
-.comment-bold{
+.comment-bold {
     font-weight: bold;
 }
 
 /* Company Info */
-#companyInfo{
+#companyInfo {
     padding: 3em 2em;
     display: flex;
     flex-direction: column;
@@ -467,47 +479,47 @@ body > header{
     border-right: 1px solid var(--lightBg);
 }
 
-#companyInfo .logo{
+#companyInfo .logo {
     text-align: center;
 }
 
-.otherInfo{
+.otherInfo {
     display: flex;
     flex-direction: column;
     gap: 3em;
 }
 
-.otherInfo-top{
+.otherInfo-top {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
-.otherInfo-top div{
+.otherInfo-top div {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-.company-bold{
+.company-bold {
     font-weight: bold;
 }
 
-.company-light{
+.company-light {
     color: var(--semiLight);
 }
 
-.otherInfo-bottom{
+.otherInfo-bottom {
     display: flex;
     justify-content: space-between;
     gap: 2em;
 }
 
-.otherInfo-bottom div{
+.otherInfo-bottom div {
     flex: 1;
 }
 
-.otherInfo-bottom-1{
+.otherInfo-bottom-1 {
     padding: 2em 6em;
     display: flex;
     flex-direction: column;
@@ -516,28 +528,28 @@ body > header{
     border-radius: 10px;
 }
 
-.otherInfo-bottom-1-bold{
+.otherInfo-bottom-1-bold {
     font-weight: bold;
 }
 
-.otherInfo-bottom-1-light{
+.otherInfo-bottom-1-light {
     font-size: 11pt;
     color: var(--semiLight);
 }
 
-.email{
+.email {
     display: flex;
     gap: 1em;
 }
 
-.email input{
+.email input {
     width: 60%;
     padding: 0.7em;
     border-radius: 5px;
     border: 1px solid var(--lightText);
 }
 
-.email a{
+.email a {
     text-decoration: none;
     color: var(--white);
     padding: 0.5em 1em;
@@ -548,7 +560,7 @@ body > header{
     align-items: center;
 }
 
-.otherInfo-bottom-2{
+.otherInfo-bottom-2 {
     color: var(--white);
     background: linear-gradient(rgba(104, 49, 255, 0.8), rgba(104, 49, 255, 0.8)), url(../images/desk3.jpg);
     background-position: center;
@@ -562,23 +574,187 @@ body > header{
     padding: 0em 3em;
 }
 
-.otherInfo-bottom-2 h2{
+.otherInfo-bottom-2 h2 {
     font-weight: bold;
     font-size: 18pt;
 }
 
-.otherInfo-bottom-2 p{
+.otherInfo-bottom-2 p {
     line-height: 1.5;
 }
 
-.otherInfo-bottom-2 p span a{
+.otherInfo-bottom-2 p span a {
     text-decoration: none;
     font-weight: bold;
     color: var(--white);
 }
 
-footer p{
+footer p {
     text-align: center;
     padding: 1em;
     color: var(--semiLight);
+}
+
+/* responsive */
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 1em 3em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 1em 2em;
+    }
+
+    #trending {
+        margin-bottom: 25em;
+    }
+
+    .trending-products-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        padding: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        padding: 0;
+    }
+
+    .offer {
+        display: none;
+    }
+
+    .hero-right {
+        display: none;
+    }
+
+    #companyInfo {
+        margin-top: 7em;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .otherInfo-top {
+        padding: 1em 0.5em;
+    }
+
+    .otherInfo-bottom-1 {
+        padding: 1em 1em;
+    }
+
+    .email input {
+        height: 2.5em;
+    }
+
+    .email a {
+        padding: 0em 0.2em;
+        height: 2em;
+    }
+
+    .otherInfo-bottom-2 {
+        padding: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #collections {
+        padding: 0.5em;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .collection-items {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .collection {
+        width: 60%;
+    }
+
+    .comments {
+        flex-direction: column;
+    }
+
+    #companyInfo {
+        margin-top: 20em;
+        padding: 0em;
+        gap: 0.3em;
+    }
+
+    .otherInfo-bottom {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .collection {
+        width: 65%;
+    }
+
+    #companyInfo {
+        margin-top: 25em;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #trending {
+        margin-bottom: 75em;
+    }
+
+    .trending-products-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #companyInfo {
+        margin-top: 34em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .collection {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body>header {
+        flex-direction: column;
+    }
+
+    .header-left {
+        flex-direction: column;
+    }
+
+    .info nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .collection {
+        width: 80%;
+    }
+
+    #companyInfo {
+        margin-top: 40em;
+    }
+
+    .otherInfo-top {
+        gap: 1em;
+    }
 }

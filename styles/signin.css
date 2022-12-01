@@ -81,14 +81,14 @@ body > main{
 
 .email input{
     width: 100%;
-    padding: 0.3em 0;
+    padding: 0.3em 0.3em;
     border: 1px solid var(--lightText);
     border-radius: 5px;
 }
 
 .password input{
     width: 100%;
-    padding: 0.3em 0;
+    padding: 0.3em 0.3em;
     border: 1px solid var(--lightText);
     border-radius: 5px;
 }
